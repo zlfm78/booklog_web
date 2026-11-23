@@ -1,0 +1,5 @@
+#!/bin/sh
+# 커밋 직전에 스테이징된 변경 내용에서 비밀 값을 찾는다. 찾으면 종료 코드 1 → 커밋 중단.
+# 활성화: git config core.hooksPath .githooks   (저장소마다 1회)
+# gitleaks가 없으면 command not found로 실패 → 검사 없이 커밋되는 일을 막는다.
+exec gitleaks protect --staged --redact --verbose
