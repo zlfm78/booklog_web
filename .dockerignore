@@ -1,0 +1,12 @@
+# 빌드 컨텍스트에서 제외: 이미지 안에서 다시 만드는 것, 필요 없는 것, 비밀 값
+.env
+.env.*
+node_modules
+dist
+.git
+.gitignore
+.gitattributes
+.githooks
+Dockerfile
+.dockerignore
+README.md
